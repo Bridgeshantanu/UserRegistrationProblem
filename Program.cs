@@ -10,8 +10,8 @@ namespace Test
             Console.WriteLine(name);
 
             //string namepattern = "^[A-Z]{1}[a-z]{2,}$";
-            string namepattern = "^[a-z]{3,}[ ][A-Z]{1}[a-z]{2,}$";
-
+            //string namepattern = "^[a-z]{3,}[ ][A-Z]{1}[a-z]{2,}$";
+            string namepattern = "^[0-9a-zA-Z]+[.][0-9a-zA_z]+[@][a-zA-Z]+[.][a-zA-Z]{2,3}([.][a-zA-Z]{2,3}){0,1}$";
             Regex regex = new Regex(namepattern);
             if (regex.IsMatch(name))
             {
